@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Practical JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo list</h1>
+
+        <!-- <button id="displayTodosButton">Display Todos</button>
+    <button id="toogleAllButton">Toogle All</button> -->
+
+        <div class="row">
+            <button onclick="handlers.addTodo()">Add</button>
+            <input id="addTodoTextInput" type="text" />
+        </div>
+
+        <div class="row">
+            <button onclick="handlers.changeTodo()">Change Todo</button>
+            <input id="changeTodoPositionInput" type="number" />
+            <input id="changeTodoTextInput" type="text" />
+        </div>
+
+        <div class="row">
+            <button onclick="handlers.toogleCompleted()">Toogle Completed</button>
+            <input id="toogleCompletedPositionInput" type="number" />
+        </div>
+        <div class="row">
+            <!-- <button onclick="handlers.displayTodos()">Display Todos</button> -->
+            <button onclick="handlers.toogleAll()">Toogle All</button>
+        </div>
+
+        <ul></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
