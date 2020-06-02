@@ -10,35 +10,15 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>ToDo List</h1>
+    <header>TODO list</header>
 
-        <!-- <button id="displayTodosButton">Display Todos</button>
-    <button id="toogleAllButton">Toogle All</button> -->
+    <form>
+        <input type="text " class="todo-input" id="addTodoTextInput " placeholder="Add your task here... " />
+        <button onclick="handlers.addTodo() ">Add</button>
+    </form>
 
-        <form>
-            <input type="text " class="todo-input" id="addTodoTextInput " placeholder="Add your task here... " />
-            <button onclick="handlers.addTodo() ">Add</button>
-        </form>
-
-        <div class="todo_container">
-            <ul class="todo_list"></ul>
-        </div>
-
-        <div class="todo">
-            <li></li>
-            <button></button>
-            <button></button>
-        </div>
-        <!--
-         <div class="row ">
-            <button onclick="handlers.toogleCompleted() ">Toogle Completed</button>
-            <input id="toogleCompletedPositionInput " type="number " />
-        </div>
-        <div class="row ">
-         <button onclick="handlers.displayTodos() ">Display Todos</button>
-        <button onclick="handlers.toogleAll() ">Toogle All</button>
-    </div> -->
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
     </div>
 
     <script src="script.js "></script>
