@@ -20,6 +20,7 @@ function addTodo(event) {
     newTodo.innerText = "hey";
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
+<<<<<<< HEAD
     // completed button
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '< i class = "fas fa-check" > < /i>';
@@ -30,6 +31,8 @@ function addTodo(event) {
     trashButton.innerHTML = '< i class="fas fa-trash" > < /i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
+=======
+>>>>>>> master
 }
 
 
