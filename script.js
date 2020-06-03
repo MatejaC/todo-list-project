@@ -22,7 +22,7 @@ function addTodo(event) {
     todoDiv.appendChild(newTodo);
     // completed button
     const completedButton = document.createElement('button');
-    completedButton.innerHTML = '< i class = "fas fa-check" > < /i>';
+    completedButton.innerHTML = '<i class="fa fa-check" aria-hidden="true"></i>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
     // trash button
