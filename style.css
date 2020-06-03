@@ -1,6 +1,8 @@
 *,
 *:before,
 *:after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -11,7 +13,7 @@ body {
 }
 
 header {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 header,
