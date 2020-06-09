@@ -59,4 +59,24 @@ form button:hover {
   background-color: #D6FF79;
   color: #2c2828;
 }
+
+ul {
+  margin: 5%;
+  width: 60%;
+  list-style: none;
+}
+
+ul li {
+  padding: 5px;
+  width: 100%;
+  list-style: none;
+  font-weight: 300;
+  font-size: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */
