@@ -23,7 +23,7 @@
         <form>
             <input id="addTodoTextInput" type="text" class="placeholder-form" placeholder="Add your task here... " />
             <button type="button" onclick="handlers.addTodo()">
-          Add Todo
+          Add
           <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -41,20 +41,22 @@
         </button>
         </form>
 
-        <!-- <div>
-        <button onclick="handlers.changeTodo()">Change Todo</button>
-        <input id="changeTodoPositionInput" type="number" />
-        <input id="changeTodoTextInput" type="text" />
-  
-
-    <div>
-        <button onclick="handlers.toogleCompleted()">Toogle Completed</button>
-        <input id="toogleCompletedPositionInput" type="number" />
-    </div>  --->
-        <div class="todoContainer">
-            <ul></ul>
-        </div>
+        <ul class="todo-group">
+            <li class="list-group">
+                <span>feed the cat</span>
+                <button type="button" class="delete-button">Delete</button>
+            </li>
+            <li class="list-group">
+                <span>go to the store</span>
+                <button type="button" class="delete-button">Delete</button>
+            </li>
+            <li class="list-group">
+                <span>wash the car</span>
+                <button type="button" class="delete-button">Delete</button>
+            </li>
+        </ul>
     </div>
+
     <script src="script.js "></script>
 </body>
 
