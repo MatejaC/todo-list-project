@@ -48,7 +48,8 @@ form {
   border: none;
 }
 
-form input {
+form input[type="text"],
+form input[type="text"]:focus {
   background: #f8f8f8;
   padding: 0.5rem;
   font-size: 1.8rem;
@@ -106,7 +107,14 @@ button:hover {
 }
 
 button:focus {
-  outline: none;
+  background-color: #d6ff79;
+  color: #414141;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 ul {

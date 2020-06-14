@@ -30,9 +30,9 @@ var view = {
             var todoLi = document.createElement('li');
             var todoTextWithCompleted = ''
             if (todo.completed === true) {
-                todoTextWithCompleted = "(X)" + todo.todoText;
+                todoTextWithCompleted = todo.todoText;
             } else {
-                todoTextWithCompleted = "( )" + todo.todoText;
+                todoTextWithCompleted = todo.todoText;
             }
 
             todoLi.textContent = todoTextWithCompleted;

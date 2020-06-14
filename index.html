@@ -20,8 +20,8 @@
         <button onclick="handlers.toogleAll()">Toogle All</button>
     </div> -->
 
-        <form>
-            <input id="addTodoTextInput" type="text" class="placeholder-form" placeholder="Add your task here... " />
+        <form class="add">
+            <input id="addTodoTextInput" type="text" name="add" class="placeholder-form" placeholder="Add your task here... " />
             <button type="button" onclick="handlers.addTodo()">
           Add
           <!-- <svg
@@ -41,7 +41,7 @@
         </button>
         </form>
 
-        <ul class="todo-group">
+        <ul class="todo-group todos">
             <li class="list-group">
                 <span>feed the cat</span>
                 <button type="button" class="delete-button">Delete</button>
