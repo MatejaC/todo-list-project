@@ -1,78 +1,112 @@
-                    $background-color-primary: rgb(2, 0, 36);
-                    $background-color-one: linear-gradient(299deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
-                    $color-bg-button: #B0FF92;
-                    $color-hoover:#D6FF79;
-                    $grey-dark: #414141;
-                    $whitey: #f8f8f8;
-                    $grey: #acacac;
-                    $color-input: #303030;
-                    $primary-font: "Poppins",
-                    sans-serif;
-                    *,
-                    *:before,
-                    *:after {
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                    }
-                    
-                    .clearfix {
-                        zoom: 1;
-                    }
-                    
-                    body {
-                        background: $background-color-primary;
-                        background: $background-color-one;
-                        font-family: $primary-font;
-                        min-height: 100vh;
-                    }
-                    
-                    header {
-                        font-size: 1.3rem;
-                        color: $whitey;
-                        font-weight: 500;
-                    }
-                    
-                    header,
-                    form {
-                        min-height: 23vh;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    form input {
-                        padding: 0.5rem;
-                        font-size: 2rem;
-                        border: none;
-                        background: $whitey;
-                    }
-                    
-                    form button {
-                        border: none;
-                        padding: 0.2rem;
-                        background: $color-bg-button;
-                        color: $grey-dark;
-                        cursor: pointer;
-                        transition: all 0.3s ease;
-                        &:hover {
-                            background-color: $color-hoover;
-                            color: rgb(44, 40, 40);
-                        }
-                    }
-                    
-                    ul {
-                        margin: 5%;
-                        width: 60%;
-                        list-style: none;
-                    }
-                    
-                    ul li {
-                        padding: 5px;
-                        width: 100%;
-                        list-style: none;
-                        font-weight: 300;
-                        font-size: 1.2em;
-                        display: flex;
-                        justify-content: space-between;
-                    }
+$background-color-primary: rgb(2, 0, 36);
+$background-color-one: linear-gradient(299deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+$color-bg-button: #b0ff92;
+$color-hoover: #d6ff79;
+$grey-dark: #414141;
+$whitey: #f8f8f8;
+$grey: #acacac;
+$color-input: #303030;
+$primary-font: "Poppins",
+sans-serif;
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $background-color-primary;
+    background: $background-color-one;
+    font-family: $primary-font;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.3rem;
+    color: $whitey;
+    font-weight: 500;
+    min-height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: none;
+    input {
+        background: $whitey;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .placeholder-form::placeholder {
+        color: $grey;
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+}
+
+button {
+    border: none;
+    padding: 0.5rem;
+    background: $color-bg-button;
+    color: $grey-dark;
+    &:hover {
+        background-color: $color-hoover;
+        color: $grey-dark;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.todoContainer {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+ul {
+    margin: 5%;
+    width: 60%;
+    list-style: none;
+    li {
+        padding: 5px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+ul>li>button {
+    font-weight: 100;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    border: none;
+    padding: 0.2rem;
+    background: $color-bg-button;
+    color: $grey-dark;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: $color-hoover;
+        color: rgb(44, 40, 40);
+    }
+}

@@ -7,10 +7,6 @@
           box-sizing: border-box;
 }
 
-.clearfix {
-  zoom: 1;
-}
-
 body {
   background: #020024;
   background: linear-gradient(299deg, #020024 0%, #090979 0%, #00d4ff 100%);
@@ -22,10 +18,6 @@ header {
   font-size: 1.3rem;
   color: #f8f8f8;
   font-weight: 500;
-}
-
-header,
-form {
   min-height: 23vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,26 +30,85 @@ form {
           align-items: center;
 }
 
-form input {
+form {
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   border: none;
-  background: #f8f8f8;
 }
 
-form button {
+form input {
+  background: #f8f8f8;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
-  padding: 0.2rem;
-  background: #B0FF92;
+}
+
+form .placeholder-form::-webkit-input-placeholder {
+  color: #acacac;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+form .placeholder-form:-ms-input-placeholder {
+  color: #acacac;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+form .placeholder-form::-ms-input-placeholder {
+  color: #acacac;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+form .placeholder-form::placeholder {
+  color: #acacac;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  padding: 0.5rem;
+  background: #b0ff92;
+  color: #414141;
+}
+
+button:hover {
+  background-color: #d6ff79;
   color: #414141;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-form button:hover {
-  background-color: #D6FF79;
-  color: #2c2828;
+button:focus {
+  outline: none;
+}
+
+.todoContainer {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 ul {
@@ -69,7 +120,6 @@ ul {
 ul li {
   padding: 5px;
   width: 100%;
-  list-style: none;
   font-weight: 300;
   font-size: 1.2em;
   display: -webkit-box;
@@ -78,5 +128,29 @@ ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+ul > li > button {
+  font-weight: 100;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  float: right;
+  border: none;
+  padding: 0.2rem;
+  background: #b0ff92;
+  color: #414141;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+ul > li > button:hover {
+  background-color: #d6ff79;
+  color: #2c2828;
 }
 /*# sourceMappingURL=style.css.map */
