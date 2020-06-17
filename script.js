@@ -6,7 +6,9 @@ var todoList = {
             completed: false,
         });
     },
+
 };
+
 
 var handlers = {
     addTodo: function() {
@@ -15,6 +17,7 @@ var handlers = {
         addTodoTextInput.value = '';
         view.displayTodos();
     },
+
     deleteTodo: function(position) {
         todoList.todos.splice(position, 1);
         view.displayTodos();
@@ -51,13 +54,17 @@ var view = {
     setUpEventListeners: function() {
         var todosUl = document.querySelector('ul');
         todosUl.addEventListener('click', function(event) {
+
             // get the element that was clicked on
             var elementClicked = event.target;
             // check if elementClicked is delete button
             if (elementClicked.className === 'deleteButton') {
                 handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
             }
+            event.preventDefault();
         });
     }
+
+
 };
 view.setUpEventListeners();

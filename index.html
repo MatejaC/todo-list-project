@@ -20,7 +20,7 @@
         <button onclick="handlers.toogleAll()">Toogle All</button>
     </div> -->
 
-        <form class="add">
+        <form class="add" onkeydown="return event.key != 'Enter';">
             <input id="addTodoTextInput" type="text" name="add" class="placeholder-form" placeholder="Add your task here... " />
             <button type="button" onclick="handlers.addTodo()">
           Add
