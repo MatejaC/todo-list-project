@@ -7,26 +7,32 @@ var todoList = {
         });
     },
 
-    /*  deleteTodo: function(position) {
-         this.todos.splice(position, 1);
-     }, */
+    deleteTodo: function(position) {
+        this.todos.splice(position, 1);
+    },
 };
 
 var handlers = {
     addTodo: function() {
-        // preventDefault();
         var addTodoTextInput = document.getElementById("addTodoTextInput");
         todoList.addTodo(addTodoTextInput.value);
         addTodoTextInput.value = '';
         view.displayTodos();
     },
 
-    deleteTodo: function(position) {;
-        todoList.todos.splice(position, 1);
-        view.displayTodos();
+    deleteTodo: function(position) {
+        todoList.deleteTodo(position);
+        view.displayTodos;
     },
 };
 
+document.getElementById('addTodoTextInput').onkeydown = function(event) {
+    if (event.keyCode == 13) {
+        todoList.addTodo(addTodoTextInput.value);
+        addTodoTextInput.value = '';
+        view.displayTodos();
+    }
+};
 
 var view = {
     displayTodos: function() {
@@ -57,8 +63,6 @@ var view = {
     },
 
     setUpEventListeners: function() {
-        event.preventDefault();
-
         var todosUl = document.querySelector('ul');
         todosUl.addEventListener('click', function(event) {
 
@@ -71,5 +75,6 @@ var view = {
         });
     }
 };
+
 
 view.setUpEventListeners();
