@@ -26,13 +26,7 @@ var handlers = {
     },
 };
 
-document.getElementById('addTodoTextInput').onkeydown = function(event) {
-    if (event.keyCode == 13) {
-        todoList.addTodo(addTodoTextInput.value);
-        addTodoTextInput.value = '';
-        view.displayTodos();
-    }
-};
+
 
 var view = {
     displayTodos: function() {
