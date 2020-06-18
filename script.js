@@ -8,7 +8,7 @@ var todoList = {
     },
 
     deleteTodo: function(position) {
-        this.todos.splice(position, 1);
+        this.todos.splice(position);
     },
 };
 
@@ -21,12 +21,11 @@ var handlers = {
     },
 
     deleteTodo: function(position) {
-        todoList.deleteTodo(position);
+        todoList.deleteTodo(position, 1);
         view.displayTodos;
     },
+
 };
-
-
 
 var view = {
     displayTodos: function() {
@@ -69,6 +68,5 @@ var view = {
         });
     }
 };
-
 
 view.setUpEventListeners();
