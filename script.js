@@ -6,9 +6,8 @@ var todoList = {
             completed: false,
         });
     },
-
     deleteTodo: function(position) {
-        this.todos.splice(position);
+        this.todos.splice(position, 1);
     },
 };
 
@@ -21,10 +20,9 @@ var handlers = {
     },
 
     deleteTodo: function(position) {
-        todoList.deleteTodo(position, 1);
-        view.displayTodos;
+        todoList.deleteTodo(position);
+        view.displayTodos();
     },
-
 };
 
 var view = {
@@ -34,7 +32,8 @@ var view = {
 
         todoList.todos.forEach(function(todo, position) {
             var todoLi = document.createElement('li');
-            var todoTextWithCompletion = ''
+            var todoTextWithCompletion = '';
+
             if (todo.completed === true) {
                 todoTextWithCompletion = todo.todoText;
             } else {
