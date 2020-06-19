@@ -46,8 +46,7 @@ form {
   border: none;
 }
 
-form input[type="text"],
-form input[type="text"]:focus {
+form input[type="text"] {
   background: #f8f8f8;
   color: #303030;
   padding: 0.65rem;

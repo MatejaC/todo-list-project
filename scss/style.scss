@@ -41,8 +41,7 @@ form {
     align-items: center;
     font-weight: 300;
     border: none;
-    input[type="text"],
-    input[type="text"]:focus {
+    input[type="text"] {
         background: $whitey;
         color: $color-input;
         padding: 0.65rem;
