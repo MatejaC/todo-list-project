@@ -57,7 +57,7 @@ form {
     text-align: center;
 }
 
-input:focus::placeholder {
+.placeholder-form:input::focus::placeholder {
     color: transparent;
 }
 

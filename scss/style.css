@@ -79,19 +79,19 @@ form input[type="text"] {
   text-align: center;
 }
 
-input:focus::-webkit-input-placeholder {
+.placeholder-form:input::focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input:focus:-ms-input-placeholder {
+.placeholder-form:input::focus:-ms-input-placeholder {
   color: transparent;
 }
 
-input:focus::-ms-input-placeholder {
+.placeholder-form:input::focus::-ms-input-placeholder {
   color: transparent;
 }
 
-input:focus::placeholder {
+.placeholder-form:input::focus::placeholder {
   color: transparent;
 }
 
