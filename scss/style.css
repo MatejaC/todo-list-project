@@ -79,19 +79,7 @@ form input[type="text"] {
   text-align: center;
 }
 
-input:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-input:focus:-ms-input-placeholder {
-  opacity: 0;
-}
-
-input:focus::-ms-input-placeholder {
-  opacity: 0;
-}
-
-input:focus::placeholder {
+.placeholder-form.hide-on-focus:focus::-webkit-input-placeholder {
   opacity: 0;
 }
 
