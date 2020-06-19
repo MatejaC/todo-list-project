@@ -44,43 +44,89 @@ form {
           align-items: center;
   font-weight: 300;
   border: none;
+  /* Chrome <=56, Safari < 10 */
+  /* FF 4-18 */
+  /* FF 19-51 */
+  /* IE 10+ */
+  /* Modern Browsers */
+  /* Chrome <=56, Safari < 10 */
+  /* FF 4-18 */
+  /* FF 19-50 */
+  /* IE 10+ */
+  /* Modern Browsers */
 }
 
 form input[type="text"] {
-  background: #f8f8f8;
   color: #303030;
+  background: #f8f8f8;
   padding: 0.65rem;
   font-size: 1.5rem;
   border: none;
   text-align: left;
 }
 
-.placeholder-form::-webkit-input-placeholder {
-  color: #acacac;
-  font-style: italic;
-  text-align: center;
+form ::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-.placeholder-form:-ms-input-placeholder {
-  color: #acacac;
-  font-style: italic;
-  text-align: center;
+form :-ms-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-.placeholder-form::-ms-input-placeholder {
-  color: #acacac;
-  font-style: italic;
-  text-align: center;
+form ::-ms-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-.placeholder-form::placeholder {
-  color: #acacac;
-  font-style: italic;
-  text-align: center;
+form ::placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-.placeholder-form.hide-on-focus:focus::-webkit-input-placeholder {
+form *:focus::-webkit-input-placeholder {
   opacity: 0;
+}
+
+form *:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+form *:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+form *:focus::placeholder {
+  opacity: 0;
+}
+
+form .placeholder-form::-webkit-input-placeholder {
+  color: #acacac;
+  font-style: italic;
+  text-align: center;
+}
+
+form .placeholder-form:-ms-input-placeholder {
+  color: #acacac;
+  font-style: italic;
+  text-align: center;
+}
+
+form .placeholder-form::-ms-input-placeholder {
+  color: #acacac;
+  font-style: italic;
+  text-align: center;
+}
+
+form .placeholder-form::placeholder {
+  color: #acacac;
+  font-style: italic;
+  text-align: center;
 }
 
 button {
