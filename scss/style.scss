@@ -55,9 +55,10 @@ form {
     color: $grey;
     font-style: italic;
     text-align: center;
-    input[type="text"] {
-        text-align: left;
-    }
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 button {

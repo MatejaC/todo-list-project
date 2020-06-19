@@ -79,20 +79,20 @@ form input[type="text"] {
   text-align: center;
 }
 
-.placeholder-form::-webkit-input-placeholder input[type="text"] {
-  text-align: left;
+input:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
-.placeholder-form:-ms-input-placeholder input[type="text"] {
-  text-align: left;
+input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
-.placeholder-form::-ms-input-placeholder input[type="text"] {
-  text-align: left;
+input:focus::-ms-input-placeholder {
+  color: transparent;
 }
 
-.placeholder-form::placeholder input[type="text"] {
-  text-align: left;
+input:focus::placeholder {
+  color: transparent;
 }
 
 button {
