@@ -52,41 +52,48 @@ form input[type="text"]:focus {
   color: #303030;
   padding: 0.65rem;
   font-size: 1.5rem;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: none;
+  text-align: left;
 }
 
-form .placeholder-form::-webkit-input-placeholder {
+.placeholder-form::-webkit-input-placeholder {
   color: #acacac;
   font-style: italic;
-  font-size: 1.45rem;
+  text-align: center;
 }
 
-form .placeholder-form:-ms-input-placeholder {
+.placeholder-form:-ms-input-placeholder {
   color: #acacac;
   font-style: italic;
-  font-size: 1.45rem;
+  text-align: center;
 }
 
-form .placeholder-form::-ms-input-placeholder {
+.placeholder-form::-ms-input-placeholder {
   color: #acacac;
   font-style: italic;
-  font-size: 1.45rem;
+  text-align: center;
 }
 
-form .placeholder-form::placeholder {
+.placeholder-form::placeholder {
   color: #acacac;
   font-style: italic;
-  font-size: 1.45rem;
+  text-align: center;
+}
+
+.placeholder-form::-webkit-input-placeholder input[type="text"] {
+  text-align: left;
+}
+
+.placeholder-form:-ms-input-placeholder input[type="text"] {
+  text-align: left;
+}
+
+.placeholder-form::-ms-input-placeholder input[type="text"] {
+  text-align: left;
+}
+
+.placeholder-form::placeholder input[type="text"] {
+  text-align: left;
 }
 
 button {

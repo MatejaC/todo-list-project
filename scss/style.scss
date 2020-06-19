@@ -47,16 +47,17 @@ form {
         color: $color-input;
         padding: 0.65rem;
         font-size: 1.5rem;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border: none;
+        text-align: left;
     }
-    .placeholder-form::placeholder {
-        color: $grey;
-        font-style: italic;
-        font-size: 1.45rem;
+}
+
+.placeholder-form::placeholder {
+    color: $grey;
+    font-style: italic;
+    text-align: center;
+    input[type="text"] {
+        text-align: left;
     }
 }
 
