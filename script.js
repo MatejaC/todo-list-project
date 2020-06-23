@@ -5,7 +5,6 @@ var todoList = {
             todoText: todoText,
             completed: false,
         });
-
     },
 
     deleteTodo: function(position) {
@@ -14,11 +13,10 @@ var todoList = {
 };
 
 var handlers = {
-
     addTodo: function() {
         var addTodoTextInput = document.getElementById("addTodoTextInput");
         if (addTodoTextInput.value == "") {
-            alert("Please add todo input.");
+            alert("Please enter todo text.");
         } else {
             todoList.addTodo(addTodoTextInput.value);
             addTodoTextInput.value = '';
@@ -52,8 +50,8 @@ var view = {
             todoLi.appendChild(this.createDeleteButton());
             todosUl.appendChild(todoLi);
         }, this);
-
     },
+
     createDeleteButton: function() {
         var deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
